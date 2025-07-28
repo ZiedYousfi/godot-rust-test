@@ -1,0 +1,13 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+
+[libraries]
+linux.debug.x86_64 =     "res://testrs/target/debug/libtestrs.so"
+linux.release.x86_64 =   "res://testrs/target/release/libtestrs.so"
+windows.debug.x86_64 =   "res://testrs/target/debug/testrs.dll"
+windows.release.x86_64 = "res://testrs/target/release/testrs.dll"
+macos.debug =            "res://testrs/target/debug/libtestrs.dylib"
+macos.release =          "res://testrs/target/release/libtestrs.dylib"
+macos.debug.arm64 =      "res://testrs/target/debug/libtestrs.dylib"
+macos.release.arm64 =    "res://testrs/target/release/libtestrs.dylib"
