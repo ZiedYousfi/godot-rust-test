@@ -3,7 +3,7 @@ use godot::classes::{ISprite2D, Sprite2D};
 
 #[derive(GodotClass)]
 #[class(base=Sprite2D)]
-pub struct Test {
+struct Test {
     speed: f64,
     angular_speed: f64,
 
@@ -19,5 +19,9 @@ impl ISprite2D for Test {
             angular_speed: std::f64::consts::PI,
             base,
         }
+    }
+
+    fn physics_process(&mut self, delta: f64) {
+        
     }
 }
