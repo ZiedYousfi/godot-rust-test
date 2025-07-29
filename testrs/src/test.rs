@@ -20,8 +20,8 @@ impl ISprite2D for Test {
             base,
         }
     }
-
     fn physics_process(&mut self, delta: f64) {
-        
+        let _ = delta;
+        let _ = self.speed * delta + self.angular_speed * delta;
     }
 }
